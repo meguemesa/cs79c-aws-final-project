@@ -11,6 +11,8 @@ I chose this project because I work in biomedical research and am responsible fo
 The application uses fictional antibody inventory data for demonstration purposes.
 
 ## Architecture
+![Biomedical Laboratory Antibody Inventory Architecture](Biomedical%20Laboratory%20Antibody%20Inventory%20%E2%80%93%20AWS%20Architecture.png)
+
 
 The application follows a serverless architecture:
 
