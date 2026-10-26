@@ -76,3 +76,27 @@ CloudWatch recorded Lambda execution events, including START, END, and REPORT en
 The application has been deployed and tested successfully. CloudFormation deployment and CloudWatch monitoring have also been verified.
 
 This project was developed for educational purposes as part of Santa Monica College CS79C.
+
+## How to Deploy
+
+1. Sign in to AWS and select the US West (Oregon) Region (`us-west-2`).
+2. Open AWS CloudFormation and choose **Create stack**.
+3. Upload the `biomed-antibody-stack.yaml` template from this repository.
+4. Follow the CloudFormation prompts and acknowledge the IAM permissions.
+5. Wait until the stack status shows `CREATE_COMPLETE`.
+6. Open the stack's **Outputs** tab and copy the `ApiUrl` value.
+7. Open the API URL in a browser to test `GET /antibodies`. A new deployment returns `[]` until inventory records are added.
+8. Use HTTP POST and PUT requests to add antibody records and update quantities.
+9. Review AWS CloudWatch logs and the Lambda error alarm to monitor the application.
+10. Delete the CloudFormation stack when finished to avoid unnecessary AWS charges.
+
+**Note:** This is a demonstration application using fictional inventory data. The API does not require authentication and should not be used for real laboratory records.
+
+
+
+
+
+
+
+
+
